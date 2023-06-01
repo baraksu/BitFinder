@@ -1,5 +1,5 @@
- Name of the project: BitFinder
- Name of the programmer:Netanel
+# Name of the project: BitFinder
+## Name of the programmer:Netanel
  Teacher:Barak
  Class:10
  School:Yeshiva Bnei Akiva Givat Shmuel
