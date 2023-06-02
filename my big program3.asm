@@ -35,20 +35,20 @@ char4 db 0  ;
     mov ds,ax    
    
     lea dx,long1
-    mov ah,09h   ;print to screen msg1
+    mov ah,09h   ;print to screen long1
     int 21h
         
     lea dx,long2
-    mov ah,09h   ;print to screen msg1
+    mov ah,09h   ;print to screen long2
     int 21h             
       
     ;load array
     
-    lea bx,arr        ;the adrees arr mov to bx
+    lea bx,arr 
     
     add bx,16
     
-    mov [bx],'$'     ; $ for the and arr
+    mov [bx],'$'
     dec bx
      
     
@@ -103,7 +103,7 @@ char4 db 0  ;
 	mov ax, [bx+1]
 	add ax, 2 
 	xor ah,ah
-	add bx, ax
+	add bx, ax           ; put $ in the arr2
 	mov [bx], '$'
 	pop ax
 
@@ -250,7 +250,7 @@ exit:
     endp
           
   
-       proc get_chars
+       proc get_chars    ; get the all chars and 
     
        mov ah,01h
        int 21h
