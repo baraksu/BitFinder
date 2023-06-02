@@ -36,7 +36,7 @@ print the number
 
 ### דוגמאות ריצה, תמונות עם הסברים
 ![image](https://github.com/baraksu/BitFinder/assets/133711584/f163bbd6-759b-4384-8474-598ad8e65308)
-כאן אפשר לראותאת הבקשה מהמשתמש להכניס סיפרה דצימלית
+כאן אפשר לראות הבקשה מהמשתמש להכניס סיפרה דצימלית
 ![image](https://github.com/baraksu/BitFinder/assets/133711584/727040bd-5021-44b7-ad48-55636e5e5779)
 כאן אפשר לראות שהכנסנו את הסיפרה  13 וקיבלנו בבינארי 1101 ועכשיו הוא מבקש מאיתנו להכניס בינארי
 ![image](https://github.com/baraksu/BitFinder/assets/133711584/258160e6-33da-4d84-9110-ab322d2e889a)
