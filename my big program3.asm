@@ -1,6 +1,24 @@
 .MODEL small
 .stack 100h
-.data
+.data  
+long1  db '                                      ' ,13,10,
+       db '   ____  _ _                          ' ,13,10,                 
+       db '  |  _ \(_) |                         ' ,13,10,                  
+       db '  | |_) |_| |_                        ' ,13,10,                  
+       db '  |  _ <| | __|                       ' ,13,10,                  
+       db '  | |_) | | |_                        ' ,13,10,                  
+       db '  |____/|_|\__|       _               ' ,13,10,      
+       db '  |  ____(_)         | |              ' ,13,10,       
+       db '  | |__   _ _ __   __| | ___ _ __     ' ,13,10,'$' 
+       db '  |  __| | | '_ \ / _` |/ _ \ __|     ' ,13,10,'
+long2  db '  | |    | | | | | (_| |  __/ |       ' ,13,10 ,
+       db '  |_|    |_|_| |_|\__,_|\___|_|       ' ,13,10 ,'$'
+                                  
+                                
+
+
+
+                                            
 arr db 17 dup(0)  ;
 arr2 db 17,?, 17 dup('$')  ; get binary number
 msg1 db 13,10,'Enter a decimal number :  $'
@@ -14,17 +32,23 @@ char4 db 0  ;
 
 .code
     mov ax,@data
-    mov ds,ax
-                 
-                 
+    mov ds,ax    
+   
+    lea dx,long1
+    mov ah,09h   ;print to screen msg1
+    int 21h
+        
+    lea dx,long2
+    mov ah,09h   ;print to screen msg1
+    int 21h             
       
     ;load array
     
-    lea bx,arr 
+    lea bx,arr        ;the adrees arr mov to bx
     
     add bx,16
     
-    mov [bx],'$'
+    mov [bx],'$'     ; $ for the and arr
     dec bx
      
     
